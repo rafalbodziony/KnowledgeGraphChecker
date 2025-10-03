@@ -1,0 +1,15 @@
+{
+  "node": {
+    "defaultColor": "#3388cc",
+    "defaultSize": 8,
+    "labelFont": "Arial",
+    "labelColor": "#222"
+  },
+  "edge": {
+    "defaultColor": "#888",
+    "defaultSize": 1,
+    "labelFont": "Arial",
+    "labelColor": "#444"
+  },
+  "backgroundColor": "#fff"
+}

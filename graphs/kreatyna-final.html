@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Graph: kreatyna-final.json</title>
+  <style>
+    html, body { height: 100%; margin: 0; background: #fff; }
+    #sigma-container { width: 100vw; height: 90vh; }
+    #controls { padding: 10px; background: #f5f5f5; }
+    label, select, input { margin-right: 10px; }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/sigma@1.2.1/build/sigma.min.js"></script>
+</head>
+<body>
+  <div id="controls">
+    <label>Filtruj węzły po typie: <select id="node-type-filter"><option value="">Wszystkie</option></select></label>
+    <label>Filtruj krawędzie po sile: <input type="number" id="edge-strength-filter" min="0" max="100" value="0"></label>
+    <button id="reset-filter">Resetuj filtry</button>
+    <span id="stats"></span>
+  </div>
+  <div id="sigma-container"></div>
+  <script>
+    var graph = {"nodes":[{"id":"Kreatyna","label":"Kreatyna","x":100,"y":0,"size":8,"color":"#3388cc","type":"suplement diety, związek chemiczny, substancja stosowana w sporcie","description":"Kreatyna to popularny suplement wśród sportowców, który może przynieść wiele korzyści, wspomagając wydolność i regenerację mięśni."},{"id":"Suplementacja kreatyną na czczo","label":"Suplementacja kreatyną na czczo","x":97.49279121818236,"y":22.25209339563144,"size":8,"color":"#3388cc","type":"metoda stosowania suplementu, praktyka dietetyczna, sposób przyjmowania","description":"Praktyka przyjmowania kreatyny na pusty żołądek, która może być preferowana przez niektórych sportowców ze względu na wygodę."},{"id":"Dawkowanie kreatyny","label":"Dawkowanie kreatyny","x":90.09688679024191,"y":43.388373911755814,"size":8,"color":"#3388cc","type":"metoda stosowania, schemat suplementacji, podejście do suplementacji","description":"Prawidłowe dawkowanie kreatyny jest kluczem do osiągnięcia optymalnych rezultatów, zaleca się przyjmowanie około 3-5 gramów dziennie."},{"id":"Faza ładowania","label":"Faza ładowania","x":78.18314824680299,"y":62.34898018587335,"size":8,"color":"#3388cc","type":"metoda stosowania, schemat suplementacji, podejście do suplementacji","description":"Faza ładowania polega na przyjmowaniu 20-25 gramów kreatyny dziennie przez 5-7 dni, po czym następuje faza utrzymania."},{"id":"Faza utrzymania","label":"Faza utrzymania","x":62.34898018587336,"y":78.18314824680299,"size":8,"color":"#3388cc","type":"metoda stosowania, schemat suplementacji, podejście do suplementacji","description":"Faza utrzymania polega na przyjmowaniu 3-5 gramów kreatyny dziennie, co jest skuteczne w dłuższej perspektywie."},{"id":"Monohydrat kreatyny","label":"Monohydrat kreatyny","x":43.38837391175582,"y":90.09688679024191,"size":8,"color":"#3388cc","type":"forma kreatyny, suplement diety, produkt","description":"Monohydrat kreatyny to forma suplementu, która jest uznawana za złoty standard w kontekście suplementacji na pusty żołądek."},{"id":"Regeneracja po treningu","label":"Regeneracja po treningu","x":22.252093395631444,"y":97.49279121818236,"size":8,"color":"#3388cc","type":"proces fizjologiczny, efekt suplementacji, aspekt zdrowotny","description":"Kreatyna wspiera regenerację po intensywnym wysiłku fizycznym, przyspieszając powrót do pełni sił."},{"id":"Bezpieczeństwo kreatyny","label":"Bezpieczeństwo kreatyny","x":6.123233995736766e-15,"y":100,"size":8,"color":"#3388cc","type":"aspekt zdrowotny, suplement diety, badania naukowe","description":"Kreatyna jest uznawana za jeden z najbezpieczniejszych suplementów sportowych, z potwierdzonym bezpieczeństwem przy stosowaniu w zalecanych dawkach."},{"id":"Potencjalne skutki uboczne","label":"Potencjalne skutki uboczne","x":-22.252093395631434,"y":97.49279121818236,"size":8,"color":"#3388cc","type":"efekt uboczny, reakcja organizmu, aspekt zdrowotny","description":"Niektóre osoby mogą doświadczyć łagodnych skutków ubocznych, takich jak zwiększenie masy ciała czy dolegliwości żołądkowe."},{"id":"Najlepszy moment na przyjmowanie kreatyny","label":"Najlepszy moment na przyjmowanie kreatyny","x":-62.34898018587335,"y":78.18314824680299,"size":8,"color":"#3388cc","type":"temat, praktyka suplementacji","description":"Debata na temat optymalnego momentu przyjmowania kreatyny, czy przed, czy po treningu, aby osiągnąć maksymalne korzyści."},{"id":"Codzienna suplementacja","label":"Codzienna suplementacja","x":-78.18314824680297,"y":62.34898018587336,"size":8,"color":"#3388cc","type":"praktyka suplementacji, podejście do suplementacji","description":"Codzienna suplementacja kreatyną, nawet w dni bez treningu, pozwala utrzymać stały poziom kreatyny w mięśniach."},{"id":"Okno anaboliczne","label":"Okno anaboliczne","x":-90.09688679024191,"y":43.38837391175582,"size":8,"color":"#3388cc","type":"pojęcie, okres regeneracji","description":"Okres bezpośrednio po treningu, kiedy organizm najbardziej potrzebuje składników odżywczych do regeneracji."},{"id":"Wzrost masy ciała","label":"Wzrost masy ciała","x":-97.49279121818236,"y":22.25209339563145,"size":12,"color":"#ff6666","type":"efekt suplementacji, wynik treningu","description":"Zwiększenie masy ciała jako efekt suplementacji kreatyną, szczególnie po treningu."},{"id":"Siła w wyciskaniu na ławce","label":"Siła w wyciskaniu na ławce","x":-100,"y":1.2246467991473532e-14,"size":12,"color":"#ff6666","type":"efekt treningowy, wynik treningu","description":"Zwiększenie siły w wyciskaniu na ławce jako efekt suplementacji kreatyną."}],"edges":[{"id":"Kreatyna->Suplementacja kreatyną na czczo","source":"Kreatyna","target":"Suplementacja kreatyną na czczo","label":"Kreatyna jest substancją, której suplementacja może być przeprowadzana na czczo, co wpływa na sposób przyjmowania.","color":"#888","size":2.7,"strength":85},{"id":"Kreatyna->Dawkowanie kreatyny","source":"Kreatyna","target":"Dawkowanie kreatyny","label":"Prawidłowe dawkowanie kreatyny jest kluczowe dla osiągnięcia optymalnych rezultatów, niezależnie od metody przyjmowania.","color":"#888","size":2.8,"strength":90},{"id":"Kreatyna->Regeneracja po treningu","source":"Kreatyna","target":"Regeneracja po treningu","label":"Kreatyna odgrywa fundamentalną rolę w procesie regeneracji po intensywnym wysiłku fizycznym.","color":"#888","size":2.9,"strength":95},{"id":"Suplementacja kreatyną na czczo->Bezpieczeństwo kreatyny","source":"Suplementacja kreatyną na czczo","target":"Bezpieczeństwo kreatyny","label":"Suplementacja kreatyną na czczo jest uznawana za bezpieczną, ale wymaga odpowiedzialnego podejścia.","color":"#888","size":2.6,"strength":80},{"id":"Dawkowanie kreatyny->Faza ładowania","source":"Dawkowanie kreatyny","target":"Faza ładowania","label":"Dawkowanie kreatyny może obejmować fazę ładowania, ale nie jest konieczne dla większości osób.","color":"#888","size":2.5,"strength":75},{"id":"Dawkowanie kreatyny->Faza utrzymania","source":"Dawkowanie kreatyny","target":"Faza utrzymania","label":"Faza utrzymania jest zalecana dla osób, które chcą utrzymać wysoki poziom kreatyny w mięśniach.","color":"#888","size":2.7,"strength":85},{"id":"Monohydrat kreatyny->Suplementacja kreatyną na czczo","source":"Monohydrat kreatyny","target":"Suplementacja kreatyną na czczo","label":"Monohydrat kreatyny jest uznawany za najlepszą formę do suplementacji na czczo.","color":"#888","size":2.8,"strength":90},{"id":"Kreatyna->Potencjalne skutki uboczne","source":"Kreatyna","target":"Potencjalne skutki uboczne","label":"Kreatyna, mimo że jest bezpieczna, może powodować łagodne skutki uboczne u niektórych osób.","color":"#888","size":2.4,"strength":70},{"id":"Faza ładowania->Faza utrzymania","source":"Faza ładowania","target":"Faza utrzymania","label":"Faza ładowania i faza utrzymania są różnymi podejściami do suplementacji kreatyną.","color":"#888","size":2.6,"strength":80},{"id":"Kreatyna->Bezpieczeństwo kreatyny","source":"Kreatyna","target":"Bezpieczeństwo kreatyny","label":"Kreatyna jest jednym z najbezpieczniejszych suplementów, co potwierdzają badania naukowe.","color":"#888","size":2.8,"strength":90},{"id":"Kreatyna->Najlepszy moment na przyjmowanie kreatyny","source":"Kreatyna","target":"Najlepszy moment na przyjmowanie kreatyny","label":"Kreatyna jest przedmiotem debaty dotyczącej najlepszego momentu jej przyjmowania, co wpływa na jej skuteczność.","color":"#888","size":2.7,"strength":85},{"id":"Kreatyna->Codzienna suplementacja","source":"Kreatyna","target":"Codzienna suplementacja","label":"Kreatyna wymaga codziennej suplementacji, aby utrzymać jej poziom w mięśniach.","color":"#888","size":2.8,"strength":90},{"id":"Kreatyna->Okno anaboliczne","source":"Kreatyna","target":"Okno anaboliczne","label":"Kreatyna jest szczególnie skuteczna w okresie anabolicznym, kiedy organizm potrzebuje składników odżywczych do regeneracji.","color":"#888","size":2.9,"strength":95},{"id":"Codzienna suplementacja->Bezpieczeństwo kreatyny","source":"Codzienna suplementacja","target":"Bezpieczeństwo kreatyny","label":"Codzienna suplementacja kreatyną jest uznawana za bezpieczną, co potwierdzają badania.","color":"#888","size":2.6,"strength":80},{"id":"Monohydrat kreatyny->Codzienna suplementacja","source":"Monohydrat kreatyny","target":"Codzienna suplementacja","label":"Monohydrat kreatyny jest uznawany za najlepszą formę do codziennej suplementacji.","color":"#888","size":2.8,"strength":90}]};
+    var s = new sigma({
+      graph: graph,
+      container: 'sigma-container',
+      settings: {
+        defaultNodeColor: '#3388cc',
+        defaultEdgeColor: '#888',
+        labelColor: '#222',
+        defaultLabelSize: 8,
+        defaultEdgeLabelSize: 1,
+        minArrowSize: 10
+      }
+    });
+    // Statystyki
+    function updateStats() {
+      document.getElementById('stats').textContent = 'Węzły: ' + graph.nodes.length + ', Krawędzie: ' + graph.edges.length;
+    }
+    updateStats();
+    // Filtrowanie typów węzłów
+    var nodeTypeFilter = document.getElementById('node-type-filter');
+    var allTypes = [];
+    graph.nodes.forEach(function(n) {
+      if (n.type) {
+        n.type.split(',').map(function(t) { t = t.trim(); if (t && allTypes.indexOf(t) === -1) allTypes.push(t); });
+      }
+    });
+    allTypes.forEach(function(type) {
+      var opt = document.createElement('option');
+      opt.value = type; opt.textContent = type;
+      nodeTypeFilter.appendChild(opt);
+    });
+    nodeTypeFilter.onchange = function() {
+      var type = nodeTypeFilter.value;
+      graph.nodes.forEach(function(n) {
+        n.hidden = type && (!n.type || n.type.indexOf(type) === -1);
+      });
+      s.refresh();
+    };
+    // Filtrowanie krawędzi po sile
+    var edgeStrengthFilter = document.getElementById('edge-strength-filter');
+    edgeStrengthFilter.oninput = function() {
+      var minStrength = parseInt(edgeStrengthFilter.value);
+      graph.edges.forEach(function(e) {
+        e.hidden = minStrength > 0 && e.strength < minStrength;
+      });
+      s.refresh();
+    };
+    // Reset filtrów
+    document.getElementById('reset-filter').onclick = function() {
+      nodeTypeFilter.value = '';
+      edgeStrengthFilter.value = 0;
+      graph.nodes.forEach(function(n) { n.hidden = false; });
+      graph.edges.forEach(function(e) { e.hidden = false; });
+      s.refresh();
+    };
+    // Podświetlanie sieci powiązań po kliknięciu węzła
+    s.bind('clickNode', function(e) {
+      var nodeId = e.data.node.id;
+      var neighbors = {};
+      graph.edges.forEach(function(edge) {
+        if (edge.source === nodeId) neighbors[edge.target] = true;
+        if (edge.target === nodeId) neighbors[edge.source] = true;
+      });
+      graph.nodes.forEach(function(n) {
+        n.color = (n.id === nodeId || neighbors[n.id]) ? n.color : '#eee';
+      });
+      graph.edges.forEach(function(edge) {
+        edge.color = (edge.source === nodeId || edge.target === nodeId) ? edge.color : '#eee';
+      });
+      s.refresh();
+    });
+    s.bind('clickStage', function() {
+      graph.nodes.forEach(function(n) { n.color = n.unconnected ? '#ff6666' : '#3388cc'; });
+      graph.edges.forEach(function(e) { e.color = '#888'; });
+      s.refresh();
+    });
+  </script>
+</body>
+</html>

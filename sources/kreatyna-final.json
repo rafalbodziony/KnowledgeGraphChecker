@@ -1,0 +1,438 @@
+[
+  {
+    "entity": {
+      "name": "Kreatyna",
+      "type": "suplement diety, związek chemiczny, substancja stosowana w sporcie",
+      "description": "Kreatyna to popularny suplement wśród sportowców, który może przynieść wiele korzyści, wspomagając wydolność i regenerację mięśni."
+    }
+  },
+  {
+    "entity": {
+      "name": "Suplementacja kreatyną na czczo",
+      "type": "metoda stosowania suplementu, praktyka dietetyczna, sposób przyjmowania",
+      "description": "Praktyka przyjmowania kreatyny na pusty żołądek, która może być preferowana przez niektórych sportowców ze względu na wygodę."
+    }
+  },
+  {
+    "entity": {
+      "name": "Dawkowanie kreatyny",
+      "type": "metoda stosowania, schemat suplementacji, podejście do suplementacji",
+      "description": "Prawidłowe dawkowanie kreatyny jest kluczem do osiągnięcia optymalnych rezultatów, zaleca się przyjmowanie około 3-5 gramów dziennie."
+    }
+  },
+  {
+    "entity": {
+      "name": "Faza ładowania",
+      "type": "metoda stosowania, schemat suplementacji, podejście do suplementacji",
+      "description": "Faza ładowania polega na przyjmowaniu 20-25 gramów kreatyny dziennie przez 5-7 dni, po czym następuje faza utrzymania."
+    }
+  },
+  {
+    "entity": {
+      "name": "Faza utrzymania",
+      "type": "metoda stosowania, schemat suplementacji, podejście do suplementacji",
+      "description": "Faza utrzymania polega na przyjmowaniu 3-5 gramów kreatyny dziennie, co jest skuteczne w dłuższej perspektywie."
+    }
+  },
+  {
+    "entity": {
+      "name": "Monohydrat kreatyny",
+      "type": "forma kreatyny, suplement diety, produkt",
+      "description": "Monohydrat kreatyny to forma suplementu, która jest uznawana za złoty standard w kontekście suplementacji na pusty żołądek."
+    }
+  },
+  {
+    "entity": {
+      "name": "Regeneracja po treningu",
+      "type": "proces fizjologiczny, efekt suplementacji, aspekt zdrowotny",
+      "description": "Kreatyna wspiera regenerację po intensywnym wysiłku fizycznym, przyspieszając powrót do pełni sił."
+    }
+  },
+  {
+    "entity": {
+      "name": "Bezpieczeństwo kreatyny",
+      "type": "aspekt zdrowotny, suplement diety, badania naukowe",
+      "description": "Kreatyna jest uznawana za jeden z najbezpieczniejszych suplementów sportowych, z potwierdzonym bezpieczeństwem przy stosowaniu w zalecanych dawkach."
+    }
+  },
+  {
+    "entity": {
+      "name": "Potencjalne skutki uboczne",
+      "type": "efekt uboczny, reakcja organizmu, aspekt zdrowotny",
+      "description": "Niektóre osoby mogą doświadczyć łagodnych skutków ubocznych, takich jak zwiększenie masy ciała czy dolegliwości żołądkowe."
+    }
+  },
+  {
+    "relationship": {
+      "source_entity": "Kreatyna",
+      "target_entity": "Suplementacja kreatyną na czczo",
+      "description": "Kreatyna jest substancją, której suplementacja może być przeprowadzana na czczo, co wpływa na sposób przyjmowania.",
+      "strength": "85"
+    }
+  },
+  {
+    "relationship": {
+      "source_entity": "Kreatyna",
+      "target_entity": "Dawkowanie kreatyny",
+      "description": "Prawidłowe dawkowanie kreatyny jest kluczowe dla osiągnięcia optymalnych rezultatów, niezależnie od metody przyjmowania.",
+      "strength": "90"
+    }
+  },
+  {
+    "relationship": {
+      "source_entity": "Kreatyna",
+      "target_entity": "Regeneracja po treningu",
+      "description": "Kreatyna odgrywa fundamentalną rolę w procesie regeneracji po intensywnym wysiłku fizycznym.",
+      "strength": "95"
+    }
+  },
+  {
+    "relationship": {
+      "source_entity": "Suplementacja kreatyną na czczo",
+      "target_entity": "Bezpieczeństwo kreatyny",
+      "description": "Suplementacja kreatyną na czczo jest uznawana za bezpieczną, ale wymaga odpowiedzialnego podejścia.",
+      "strength": "80"
+    }
+  },
+  {
+    "relationship": {
+      "source_entity": "Dawkowanie kreatyny",
+      "target_entity": "Faza ładowania",
+      "description": "Dawkowanie kreatyny może obejmować fazę ładowania, ale nie jest konieczne dla większości osób.",
+      "strength": "75"
+    }
+  },
+  {
+    "relationship": {
+      "source_entity": "Dawkowanie kreatyny",
+      "target_entity": "Faza utrzymania",
+      "description": "Faza utrzymania jest zalecana dla osób, które chcą utrzymać wysoki poziom kreatyny w mięśniach.",
+      "strength": "85"
+    }
+  },
+  {
+    "relationship": {
+      "source_entity": "Monohydrat kreatyny",
+      "target_entity": "Suplementacja kreatyną na czczo",
+      "description": "Monohydrat kreatyny jest uznawany za najlepszą formę do suplementacji na czczo.",
+      "strength": "90"
+    }
+  },
+  {
+    "relationship": {
+      "source_entity": "Kreatyna",
+      "target_entity": "Potencjalne skutki uboczne",
+      "description": "Kreatyna, mimo że jest bezpieczna, może powodować łagodne skutki uboczne u niektórych osób.",
+      "strength": "70"
+    }
+  },
+  {
+    "relationship": {
+      "source_entity": "Faza ładowania",
+      "target_entity": "Faza utrzymania",
+      "description": "Faza ładowania i faza utrzymania są różnymi podejściami do suplementacji kreatyną.",
+      "strength": "80"
+    }
+  },
+  {
+    "relationship": {
+      "source_entity": "Kreatyna",
+      "target_entity": "Bezpieczeństwo kreatyny",
+      "description": "Kreatyna jest jednym z najbezpieczniejszych suplementów, co potwierdzają badania naukowe.",
+      "strength": "90"
+    }
+  },
+  {
+    "entity": {
+      "name": "Kreatyna",
+      "type": "suplement diety, związek chemiczny, substancja stosowana w sporcie",
+      "description": "Kreatyna to popularny suplement stosowany przez sportowców w celu zwiększenia siły i masy mięśniowej."
+    }
+  },
+  {
+    "entity": {
+      "name": "Najlepszy moment na przyjmowanie kreatyny",
+      "type": "temat, praktyka suplementacji",
+      "description": "Debata na temat optymalnego momentu przyjmowania kreatyny, czy przed, czy po treningu, aby osiągnąć maksymalne korzyści."
+    }
+  },
+  {
+    "entity": {
+      "name": "Codzienna suplementacja",
+      "type": "praktyka suplementacji, podejście do suplementacji",
+      "description": "Codzienna suplementacja kreatyną, nawet w dni bez treningu, pozwala utrzymać stały poziom kreatyny w mięśniach."
+    }
+  },
+  {
+    "entity": {
+      "name": "Okno anaboliczne",
+      "type": "pojęcie, okres regeneracji",
+      "description": "Okres bezpośrednio po treningu, kiedy organizm najbardziej potrzebuje składników odżywczych do regeneracji."
+    }
+  },
+  {
+    "entity": {
+      "name": "Wzrost masy ciała",
+      "type": "efekt suplementacji, wynik treningu",
+      "description": "Zwiększenie masy ciała jako efekt suplementacji kreatyną, szczególnie po treningu."
+    }
+  },
+  {
+    "entity": {
+      "name": "Siła w wyciskaniu na ławce",
+      "type": "efekt treningowy, wynik treningu",
+      "description": "Zwiększenie siły w wyciskaniu na ławce jako efekt suplementacji kreatyną."
+    }
+  },
+  {
+    "entity": {
+      "name": "Dawkowanie kreatyny",
+      "type": "metoda stosowania, schemat suplementacji, podejście do suplementacji",
+      "description": "Prawidłowe dawkowanie kreatyny jest kluczem do osiągnięcia optymalnych rezultatów, zaleca się przyjmowanie około 3-5 gramów dziennie."
+    }
+  },
+  {
+    "entity": {
+      "name": "Faza ładowania",
+      "type": "metoda stosowania, schemat suplementacji, podejście do suplementacji",
+      "description": "Faza ładowania polega na przyjmowaniu 20-25 gramów kreatyny dziennie przez 5-7 dni, po czym następuje faza utrzymania."
+    }
+  },
+  {
+    "entity": {
+      "name": "Faza utrzymania",
+      "type": "metoda stosowania, schemat suplementacji, podejście do suplementacji",
+      "description": "Faza utrzymania polega na przyjmowaniu 3-5 gramów kreatyny dziennie, co jest skuteczne w dłuższej perspektywie."
+    }
+  },
+  {
+    "entity": {
+      "name": "Monohydrat kreatyny",
+      "type": "forma kreatyny, suplement diety, produkt",
+      "description": "Monohydrat kreatyny to forma suplementu, która jest uznawana za złoty standard w kontekście suplementacji."
+    }
+  },
+  {
+    "entity": {
+      "name": "Regeneracja po treningu",
+      "type": "proces fizjologiczny, efekt suplementacji, aspekt zdrowotny",
+      "description": "Kreatyna wspiera regenerację po intensywnym wysiłku fizycznym, przyspieszając powrót do pełni sił."
+    }
+  },
+  {
+    "entity": {
+      "name": "Bezpieczeństwo kreatyny",
+      "type": "aspekt zdrowotny, suplement diety, badania naukowe",
+      "description": "Kreatyna jest uznawana za jeden z najbezpieczniejszych suplementów sportowych, z potwierdzonym bezpieczeństwem przy stosowaniu w zalecanych dawkach."
+    }
+  },
+  {
+    "entity": {
+      "name": "Potencjalne skutki uboczne",
+      "type": "efekt uboczny, reakcja organizmu, aspekt zdrowotny",
+      "description": "Niektóre osoby mogą doświadczyć łagodnych skutków ubocznych, takich jak zwiększenie masy ciała czy dolegliwości żołądkowe."
+    }
+  },
+  {
+    "relationship": {
+      "source_entity": "Kreatyna",
+      "target_entity": "Najlepszy moment na przyjmowanie kreatyny",
+      "description": "Kreatyna jest przedmiotem debaty dotyczącej najlepszego momentu jej przyjmowania, co wpływa na jej skuteczność.",
+      "strength": "85"
+    }
+  },
+  {
+    "relationship": {
+      "source_entity": "Kreatyna",
+      "target_entity": "Codzienna suplementacja",
+      "description": "Kreatyna wymaga codziennej suplementacji, aby utrzymać jej poziom w mięśniach.",
+      "strength": "90"
+    }
+  },
+  {
+    "relationship": {
+      "source_entity": "Kreatyna",
+      "target_entity": "Okno anaboliczne",
+      "description": "Kreatyna jest szczególnie skuteczna w okresie anabolicznym, kiedy organizm potrzebuje składników odżywczych do regeneracji.",
+      "strength": "95"
+    }
+  },
+  {
+    "relationship": {
+      "source_entity": "Codzienna suplementacja",
+      "target_entity": "Bezpieczeństwo kreatyny",
+      "description": "Codzienna suplementacja kreatyną jest uznawana za bezpieczną, co potwierdzają badania.",
+      "strength": "80"
+    }
+  },
+  {
+    "relationship": {
+      "source_entity": "Dawkowanie kreatyny",
+      "target_entity": "Faza ładowania",
+      "description": "Dawkowanie kreatyny może obejmować fazę ładowania, co przyspiesza nasycenie mięśni.",
+      "strength": "75"
+    }
+  },
+  {
+    "relationship": {
+      "source_entity": "Dawkowanie kreatyny",
+      "target_entity": "Faza utrzymania",
+      "description": "Faza utrzymania jest zalecana dla osób, które chcą utrzymać wysoki poziom kreatyny w mięśniach.",
+      "strength": "85"
+    }
+  },
+  {
+    "relationship": {
+      "source_entity": "Monohydrat kreatyny",
+      "target_entity": "Codzienna suplementacja",
+      "description": "Monohydrat kreatyny jest uznawany za najlepszą formę do codziennej suplementacji.",
+      "strength": "90"
+    }
+  },
+  {
+    "relationship": {
+      "source_entity": "Kreatyna",
+      "target_entity": "Potencjalne skutki uboczne",
+      "description": "Kreatyna, mimo że jest bezpieczna, może powodować łagodne skutki uboczne u niektórych osób.",
+      "strength": "70"
+    }
+  },
+  {
+    "relationship": {
+      "source_entity": "Faza ładowania",
+      "target_entity": "Faza utrzymania",
+      "description": "Faza ładowania i faza utrzymania są różnymi podejściami do suplementacji kreatyną.",
+      "strength": "80"
+    }
+  },
+  {
+    "relationship": {
+      "source_entity": "Kreatyna",
+      "target_entity": "Bezpieczeństwo kreatyny",
+      "description": "Kreatyna jest jednym z najbezpieczniejszych suplementów, co potwierdzają badania naukowe.",
+      "strength": "90"
+    }
+  },
+  {
+    "entity": {
+      "name": "Kreatyna",
+      "type": "suplement diety, związek chemiczny, substancja stosowana w sporcie",
+      "description": "Kreatyna to popularny suplement stosowany przez sportowców w celu zwiększenia siły i masy mięśniowej."
+    }
+  },
+  {
+    "entity": {
+      "name": "Najlepszy moment na przyjmowanie kreatyny",
+      "type": "temat, praktyka suplementacji",
+      "description": "Debata na temat optymalnego momentu przyjmowania kreatyny, czy przed, czy po treningu, aby osiągnąć maksymalne korzyści."
+    }
+  },
+  {
+    "entity": {
+      "name": "Codzienna suplementacja",
+      "type": "praktyka suplementacji, podejście do suplementacji",
+      "description": "Codzienna suplementacja kreatyną, nawet w dni bez treningu, pozwala utrzymać stały poziom kreatyny w mięśniach."
+    }
+  },
+  {
+    "entity": {
+      "name": "Okno anaboliczne",
+      "type": "pojęcie, okres regeneracji",
+      "description": "Okres bezpośrednio po treningu, kiedy organizm najbardziej potrzebuje składników odżywczych do regeneracji."
+    }
+  },
+  {
+    "entity": {
+      "name": "Wzrost masy ciała",
+      "type": "efekt suplementacji, wynik treningu",
+      "description": "Zwiększenie masy ciała jako efekt suplementacji kreatyną, szczególnie po treningu."
+    }
+  },
+  {
+    "entity": {
+      "name": "Siła w wyciskaniu na ławce",
+      "type": "efekt treningowy, wynik treningu",
+      "description": "Zwiększenie siły w wyciskaniu na ławce jako efekt suplementacji kreatyną."
+    }
+  },
+  {
+    "relationship": {
+      "source_entity": "Kreatyna",
+      "target_entity": "Najlepszy moment na przyjmowanie kreatyny",
+      "description": "Kreatyna jest przedmiotem debaty dotyczącej najlepszego momentu jej przyjmowania, co wpływa na jej skuteczność.",
+      "strength": "85"
+    }
+  },
+  {
+    "relationship": {
+      "source_entity": "Kreatyna",
+      "target_entity": "Codzienna suplementacja",
+      "description": "Kreatyna wymaga codziennej suplementacji, aby utrzymać jej poziom w mięśniach.",
+      "strength": "90"
+    }
+  },
+  {
+    "relationship": {
+      "source_entity": "Kreatyna",
+      "target_entity": "Okno anaboliczne",
+      "description": "Kreatyna jest szczególnie skuteczna w okresie anabolicznym, kiedy organizm potrzebuje składników odżywczych do regeneracji.",
+      "strength": "95"
+    }
+  },
+  {
+    "relationship": {
+      "source_entity": "Codzienna suplementacja",
+      "target_entity": "Bezpieczeństwo kreatyny",
+      "description": "Codzienna suplementacja kreatyną jest uznawana za bezpieczną, co potwierdzają badania.",
+      "strength": "80"
+    }
+  },
+  {
+    "relationship": {
+      "source_entity": "Dawkowanie kreatyny",
+      "target_entity": "Faza ładowania",
+      "description": "Dawkowanie kreatyny może obejmować fazę ładowania, co przyspiesza nasycenie mięśni.",
+      "strength": "75"
+    }
+  },
+  {
+    "relationship": {
+      "source_entity": "Dawkowanie kreatyny",
+      "target_entity": "Faza utrzymania",
+      "description": "Faza utrzymania jest zalecana dla osób, które chcą utrzymać wysoki poziom kreatyny w mięśniach.",
+      "strength": "85"
+    }
+  },
+  {
+    "relationship": {
+      "source_entity": "Monohydrat kreatyny",
+      "target_entity": "Codzienna suplementacja",
+      "description": "Monohydrat kreatyny jest uznawany za najlepszą formę do codziennej suplementacji.",
+      "strength": "90"
+    }
+  },
+  {
+    "relationship": {
+      "source_entity": "Kreatyna",
+      "target_entity": "Potencjalne skutki uboczne",
+      "description": "Kreatyna, mimo że jest bezpieczna, może powodować łagodne skutki uboczne u niektórych osób.",
+      "strength": "70"
+    }
+  },
+  {
+    "relationship": {
+      "source_entity": "Faza ładowania",
+      "target_entity": "Faza utrzymania",
+      "description": "Faza ładowania i faza utrzymania są różnymi podejściami do suplementacji kreatyną.",
+      "strength": "80"
+    }
+  },
+  {
+    "relationship": {
+      "source_entity": "Kreatyna",
+      "target_entity": "Bezpieczeństwo kreatyny",
+      "description": "Kreatyna jest jednym z najbezpieczniejszych suplementów, co potwierdzają badania naukowe.",
+      "strength": "90"
+    }
+  }
+]
