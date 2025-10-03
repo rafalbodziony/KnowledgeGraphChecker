@@ -207,3 +207,9 @@ __marimo__/
 # documentation and private notes
 docs/private/
 docs/Private/
+
+# node modules
+node_modules/
+# yarn v2
+.pnp.cjs
+.pnp.loader.mjs
